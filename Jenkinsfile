@@ -15,7 +15,7 @@ node {
     
     stage('push package to repository') {
      docker.image('maven:3.6-jdk-8-alpine').inside {
-       sh 'mvn deploy -DaltDeploymentRepository=nexus-snapshots::default::http://nexus:8081/repository/maven-snapshots/'
+       sh 'mvn deploy -DaltDeploymentRepository=nexus-snapshots::default::http://3.81.217.40:8081/repository/maven-snapshots/'
      }
     }
     
